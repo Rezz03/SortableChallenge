@@ -9,5 +9,5 @@ RUN mvn dependency:resolve compile package
 
 COPY src src
 RUN mvn compile package
-
-CMD ["java", "-jar", "target/Result-1.0.SNAPSHOT.jar"]
+RUN ls
+CMD ["java", "-jar", "target/auction-challenge-0.1.0-SNAPSHOT-jar-with-dependencies.jar"]
